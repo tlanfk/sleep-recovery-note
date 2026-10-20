@@ -23,14 +23,12 @@
 
 ## 주요 기능
 
-| 탭 | 하는 일 |
-|---|---|
-| **홈** | 지금이 8주 과정 몇 주차인지, 오늘 할 일, 어젯밤 수면 요약, 상황별 안내와 연구 근거 한 가지 |
-| **루틴** | 아침·낮·저녁 행동(정한 시각 기상, 졸릴 때만 침대, 걱정 기록, 이완 등)을 *했는지*만 체크. 점수가 아니라 행동 |
-| **기록** | 매일 아침 수면일지(누운 시각·잠들기까지·밤중 깸·기상·침대 나온 시각), 실제 복용량, 증상, 생각 노트 |
-| **감량** | 의료진과 정한 **처방 변경 기록**과 실제 복용량 그래프. 앱이 용량을 정해 주지 않음 |
-| **분석** | 최대 52주: 실제 수면시간·수면효율·잠들기까지·복용량·약 없는 밤·CBT-I 실행률·자신감 등을 주 단위로 비교 |
-| 기타 | 8주 과정과 근거 카드, "AI에게 물어보기"(내 기록을 묶어 질문 글 생성), 백업/복원(JSON), 엑셀용 CSV 내보내기, 큰 글씨·다크 모드 |
+- **홈** — 지금이 8주 과정 몇 주차인지, 오늘 할 일, 어젯밤 수면 요약, 상황별 안내와 연구 근거 한 가지
+- **루틴** — 아침·낮·저녁 행동(정한 시각 기상, 졸릴 때만 침대, 걱정 기록, 이완 등)을 *했는지*만 체크. 점수가 아니라 행동
+- **기록** — 매일 아침 수면일지(누운 시각·잠들기까지·밤중 깸·기상·침대 나온 시각), 실제 복용량, 증상, 생각 노트
+- **감량** — 의료진과 정한 **처방 변경 기록**과 실제 복용량 그래프. 앱이 용량을 정해 주지 않음
+- **분석** — 최대 52주: 실제 수면시간·수면효율·잠들기까지·복용량·약 없는 밤·CBT-I 실행률·자신감 등을 주 단위로 비교
+- **기타** — 8주 과정과 근거 카드, "AI에게 물어보기"(내 기록을 묶어 질문 글 생성), 백업/복원(JSON), 엑셀용 CSV 내보내기, 큰 글씨·다크 모드
 
 ### 설계 원칙
 
@@ -44,21 +42,19 @@
 
 앱의 "연구로 보면" 카드와 8주 과정의 설명은 아래 자료를 바탕으로 합니다. 수치는 PubMed·PMC·출판사 페이지의 **초록과 대조**해 확인했습니다. 연구마다 대상(약 종류, 연령)과 지표(약 중단률, 불면 관해율)가 다르니, 앱에서는 숫자 옆에 그 차이를 함께 적었습니다. 원문 링크는 `js/data.js`의 `FACTS`, `REFERENCES`에 있습니다.
 
-| 자료 | 내용 |
-|---|---|
-| [Morin 2004, Am J Psychiatry](https://pubmed.ncbi.nlm.nih.gov/14754783/) | 장기 복용 고령자 76명: 감량+CBT-I 10주 뒤 85% 중단 (감량만 48%, CBT-I만 54%) — 벤조디아제핀 |
-| [Baillargeon 2003, CMAJ](https://pubmed.ncbi.nlm.nih.gov/14609970/) | 65명, 1년 뒤 감량+CBT-I 70% vs 감량만 24% (혈액검사로 확인) |
-| [Morin 2009, JAMA](https://pubmed.ncbi.nlm.nih.gov/19454639/) | 졸피뎀, 160명: 6개월 불면 관해율 68% vs 42% (중단률이 아닌 *관해* 비율) |
-| [Fung 2024, JAMA Intern Med](https://pubmed.ncbi.nlm.nih.gov/39374004/) | 55세 이상 188명: 가림 감량+강화 CBT-I 6개월 73.4% vs 58.6% |
-| [Gardner 2024 (YAWNS NB), JAMA Psychiatry](https://doi.org/10.1001/jamapsychiatry.2024.2731) | 65세 이상 565명 자가 관리 개입: 6개월 26.2% vs 일반 진료 7.5% |
-| [Coteur 2023 (Big Bird), Sleep](https://pubmed.ncbi.nlm.nih.gov/36413221/) | 916명 진료+온라인 CBT-I 학습: 1년 중단률 18% vs 20% (차이 없음) |
-| [Morin 2005, Behav Res Ther](https://pubmed.ncbi.nlm.nih.gov/15531349/) | 중단 성공 47명 2년 추적: 42.6% 재복용 (CBT만 한 군 69% vs 감량을 한 군 31~33%) |
-| [Bélanger 2005, Health Psychol](https://pubmed.ncbi.nlm.nih.gov/15898864/) · [Belleville 2008, Health Psychol](https://pubmed.ncbi.nlm.nih.gov/18377143/) | 감량 중 자기효능감·불안과 성공의 관계 |
-| [Lähteenmäki 2014, Br J Clin Pharmacol](https://pubmed.ncbi.nlm.nih.gov/24286360/) | 55세 이상 92명, 멜라토닌 병행 감량 (멜라토닌은 도움 안 됨, 6개월 뒤 중단 유지 감소) |
-| [Edinger 2021, AASM 지침](https://pmc.ncbi.nlm.nih.gov/articles/PMC7853203/) | 만성 불면증 다요소 CBT-I 강력 권고, 자극조절·이완 각각 권고 |
-| [Zeraatkar 2025, BMJ](https://pubmed.ncbi.nlm.nih.gov/40527546/) · [Takaesu 2019, Sleep Med Rev](https://pubmed.ncbi.nlm.nih.gov/31648145/) · [Tannenbaum 2014, JAMA Intern Med](https://pubmed.ncbi.nlm.nih.gov/24733354/) | 중단 방법 체계적 문헌고찰(49개 시험; 환자 교육 등만 효과 가능성, 근거 확실성 낮음), CBT-I+감량 메타분석(3개월 이하 유리·12개월 비유의), 환자 교육 EMPOWER 시험 |
-| [Pottie 2018, Can Fam Physician](https://pmc.ncbi.nlm.nih.gov/articles/PMC5951648/) · [Alliance for Sleep 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10095217/) · [ASAM 등 공동 지침 2025](https://www.asam.org/quality-care/clinical-guidelines/benzodiazepine-tapering) · [AFP 2019 해설](https://www.aafp.org/pubs/afp/issues/2019/0101/p57.html) | 수면제(BZRA) 감량 지침들 |
-| [FDA 2019 안전성 경고](https://www.fda.gov/safety/medical-product-safety-information/certain-prescription-insomnia-medicines-new-boxed-warning-due-risk-serious-injuries-caused) | 졸피뎀 등 복잡 수면 행동 boxed warning |
+- [Morin 2004, Am J Psychiatry](https://pubmed.ncbi.nlm.nih.gov/14754783/) — 장기 복용 고령자 76명: 감량+CBT-I 10주 뒤 85% 중단 (감량만 48%, CBT-I만 54%) — 벤조디아제핀
+- [Baillargeon 2003, CMAJ](https://pubmed.ncbi.nlm.nih.gov/14609970/) — 65명, 1년 뒤 감량+CBT-I 70% vs 감량만 24% (혈액검사로 확인)
+- [Morin 2009, JAMA](https://pubmed.ncbi.nlm.nih.gov/19454639/) — 졸피뎀, 160명: 6개월 불면 관해율 68% vs 42% (중단률이 아닌 *관해* 비율)
+- [Fung 2024, JAMA Intern Med](https://pubmed.ncbi.nlm.nih.gov/39374004/) — 55세 이상 188명: 가림 감량+강화 CBT-I 6개월 73.4% vs 58.6%
+- [Gardner 2024 (YAWNS NB), JAMA Psychiatry](https://doi.org/10.1001/jamapsychiatry.2024.2731) — 65세 이상 565명 자가 관리 개입: 6개월 26.2% vs 일반 진료 7.5%
+- [Coteur 2023 (Big Bird), Sleep](https://pubmed.ncbi.nlm.nih.gov/36413221/) — 916명 진료+온라인 CBT-I 학습: 1년 중단률 18% vs 20% (차이 없음)
+- [Morin 2005, Behav Res Ther](https://pubmed.ncbi.nlm.nih.gov/15531349/) — 중단 성공 47명 2년 추적: 42.6% 재복용 (CBT만 한 군 69% vs 감량을 한 군 31~33%)
+- [Bélanger 2005, Health Psychol](https://pubmed.ncbi.nlm.nih.gov/15898864/) · [Belleville 2008, Health Psychol](https://pubmed.ncbi.nlm.nih.gov/18377143/) — 감량 중 자기효능감·불안과 성공의 관계
+- [Lähteenmäki 2014, Br J Clin Pharmacol](https://pubmed.ncbi.nlm.nih.gov/24286360/) — 55세 이상 92명, 멜라토닌 병행 감량 (멜라토닌은 도움 안 됨, 6개월 뒤 중단 유지 감소)
+- [Edinger 2021, AASM 지침](https://pmc.ncbi.nlm.nih.gov/articles/PMC7853203/) — 만성 불면증 다요소 CBT-I 강력 권고, 자극조절·이완 각각 권고
+- [Zeraatkar 2025, BMJ](https://pubmed.ncbi.nlm.nih.gov/40527546/) · [Takaesu 2019, Sleep Med Rev](https://pubmed.ncbi.nlm.nih.gov/31648145/) · [Tannenbaum 2014, JAMA Intern Med](https://pubmed.ncbi.nlm.nih.gov/24733354/) — 중단 방법 체계적 문헌고찰(49개 시험; 환자 교육 등만 효과 가능성, 근거 확실성 낮음), CBT-I+감량 메타분석(3개월 이하 유리·12개월 비유의), 환자 교육 EMPOWER 시험
+- [Pottie 2018, Can Fam Physician](https://pmc.ncbi.nlm.nih.gov/articles/PMC5951648/) · [Alliance for Sleep 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10095217/) · [ASAM 등 공동 지침 2025](https://www.asam.org/quality-care/clinical-guidelines/benzodiazepine-tapering) · [AFP 2019 해설](https://www.aafp.org/pubs/afp/issues/2019/0101/p57.html) — 수면제(BZRA) 감량 지침들
+- [FDA 2019 안전성 경고](https://www.fda.gov/safety/medical-product-safety-information/certain-prescription-insomnia-medicines-new-boxed-warning-due-risk-serious-injuries-caused) — 졸피뎀 등 복잡 수면 행동 boxed warning
 
 > 초록에 없는 본문 수치는 확인하지 못해 앱에서도 다루지 않았습니다. 새 자료를 넣을 때는 초록과 대조한 뒤 `js/data.js`에 추가하세요.
 
