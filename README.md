@@ -52,11 +52,11 @@
 | [Fung 2024, JAMA Intern Med](https://pubmed.ncbi.nlm.nih.gov/39374004/) | 55세 이상 188명: 가림 감량+강화 CBT-I 6개월 73.4% vs 58.6% |
 | [Gardner 2024 (YAWNS NB), JAMA Psychiatry](https://doi.org/10.1001/jamapsychiatry.2024.2731) | 65세 이상 565명 자가 관리 개입: 6개월 26.2% vs 일반 진료 7.5% |
 | [Coteur 2023 (Big Bird), Sleep](https://pubmed.ncbi.nlm.nih.gov/36413221/) | 916명 진료+온라인 CBT-I 학습: 1년 중단률 18% vs 20% (차이 없음) |
-| [Morin 2005, Behav Res Ther](https://pubmed.ncbi.nlm.nih.gov/15531349/) | 중단 성공 47명 2년 추적: 42.6% 재복용 |
+| [Morin 2005, Behav Res Ther](https://pubmed.ncbi.nlm.nih.gov/15531349/) | 중단 성공 47명 2년 추적: 42.6% 재복용 (CBT만 한 군 69% vs 감량을 한 군 31~33%) |
 | [Bélanger 2005, Health Psychol](https://pubmed.ncbi.nlm.nih.gov/15898864/) · [Belleville 2008, Health Psychol](https://pubmed.ncbi.nlm.nih.gov/18377143/) | 감량 중 자기효능감·불안과 성공의 관계 |
 | [Lähteenmäki 2014, Br J Clin Pharmacol](https://pubmed.ncbi.nlm.nih.gov/24286360/) | 55세 이상 92명, 멜라토닌 병행 감량 (멜라토닌은 도움 안 됨, 6개월 뒤 중단 유지 감소) |
 | [Edinger 2021, AASM 지침](https://pmc.ncbi.nlm.nih.gov/articles/PMC7853203/) | 만성 불면증 다요소 CBT-I 강력 권고, 자극조절·이완 각각 권고 |
-| [Zeraatkar 2025, BMJ](https://pubmed.ncbi.nlm.nih.gov/40527546/) · [Takaesu 2019, Sleep Med Rev](https://pubmed.ncbi.nlm.nih.gov/31648145/) · [Tannenbaum 2014, JAMA Intern Med](https://pubmed.ncbi.nlm.nih.gov/24733354/) | 중단 방법 체계적 문헌고찰, CBT-I+감량 메타분석(단기 유리·장기 불확실), 환자 교육 EMPOWER 시험 |
+| [Zeraatkar 2025, BMJ](https://pubmed.ncbi.nlm.nih.gov/40527546/) · [Takaesu 2019, Sleep Med Rev](https://pubmed.ncbi.nlm.nih.gov/31648145/) · [Tannenbaum 2014, JAMA Intern Med](https://pubmed.ncbi.nlm.nih.gov/24733354/) | 중단 방법 체계적 문헌고찰(49개 시험; 환자 교육 등만 효과 가능성, 근거 확실성 낮음), CBT-I+감량 메타분석(3개월 이하 유리·12개월 비유의), 환자 교육 EMPOWER 시험 |
 | [Pottie 2018, Can Fam Physician](https://pmc.ncbi.nlm.nih.gov/articles/PMC5951648/) · [Alliance for Sleep 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10095217/) · [ASAM 등 공동 지침 2025](https://www.asam.org/quality-care/clinical-guidelines/benzodiazepine-tapering) · [AFP 2019 해설](https://www.aafp.org/pubs/afp/issues/2019/0101/p57.html) | 수면제(BZRA) 감량 지침들 |
 | [FDA 2019 안전성 경고](https://www.fda.gov/safety/medical-product-safety-information/certain-prescription-insomnia-medicines-new-boxed-warning-due-risk-serious-injuries-caused) | 졸피뎀 등 복잡 수면 행동 boxed warning |
 
