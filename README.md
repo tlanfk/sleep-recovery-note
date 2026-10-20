@@ -8,14 +8,14 @@
 
 <table>
 <tr>
-<td><img src="docs/screenshots/1-start.png" alt="시작 화면" width="190"><br><sub>시작 · 약 이름과 처방 용량은 직접 입력</sub></td>
-<td><img src="docs/screenshots/2-home.png" alt="홈" width="190"><br><sub>홈 · 오늘 할 일과 어젯밤 요약</sub></td>
-<td><img src="docs/screenshots/3-routine.png" alt="루틴" width="190"><br><sub>루틴 · 하루 CBT-I 행동 체크</sub></td>
+<td><img src="docs/screenshots/1-start.png" alt="시작 화면" width="190"><br><sub>시작</sub></td>
+<td><img src="docs/screenshots/2-home.png" alt="홈" width="190"><br><sub>홈</sub></td>
+<td><img src="docs/screenshots/3-routine.png" alt="루틴" width="190"><br><sub>루틴</sub></td>
 </tr>
 <tr>
-<td><img src="docs/screenshots/4-diary.png" alt="수면일지" width="190"><br><sub>기록 · 수면일지와 실제 복용량</sub></td>
-<td><img src="docs/screenshots/5-taper.png" alt="감량" width="190"><br><sub>감량 · 처방 기록과 실제 복용량</sub></td>
-<td><img src="docs/screenshots/6-stats.png" alt="분석" width="190"><br><sub>분석 · 수면·복용·증상 변화</sub></td>
+<td><img src="docs/screenshots/4-diary.png" alt="수면일지" width="190"><br><sub>기록</sub></td>
+<td><img src="docs/screenshots/5-taper.png" alt="감량" width="190"><br><sub>감량</sub></td>
+<td><img src="docs/screenshots/6-stats.png" alt="분석" width="190"><br><sub>분석</sub></td>
 </tr>
 </table>
 
