@@ -1,0 +1,10 @@
+worker
+test
+docs
+wrangler.jsonc
+.assetsignore
+README.md
+LICENSE
+package.json
+node_modules
+.wrangler

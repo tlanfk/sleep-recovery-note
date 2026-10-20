@@ -1,0 +1,15 @@
+{
+  "name": "sleep-recovery-note",
+  "version": "1.0.0",
+  "description": "수면제 감량과 CBT-I(불면증 인지행동치료)를 함께 기록하고 논문·지침 근거와 함께 분석하는 PWA",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "node test/calc.test.js",
+    "dev": "npx wrangler dev --port 8793",
+    "deploy": "npx wrangler deploy"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,10 @@
+# 시험 중 생기는 화면 캡처
+test/shots/
+
+node_modules/
+.wrangler/
+.dev.vars
+.env
+*.log
+.DS_Store
+Thumbs.db
